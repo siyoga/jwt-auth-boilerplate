@@ -1,0 +1,610 @@
+local
+jwt
+panic: open : no such file or directory
+
+goroutine 1 [running]:
+github.com/siyoga/jwt-auth-boilerplate/internal/app.NewApplication(...)
+	/usr/src/backend/internal/app/app.go:20
+main.main()
+	/usr/src/backend/cmd/main.go:14 +0x114
+local
+jwt
+panic: open : no such file or directory
+
+goroutine 1 [running]:
+github.com/siyoga/jwt-auth-boilerplate/internal/app.NewApplication(...)
+	/usr/src/backend/internal/app/app.go:20
+main.main()
+	/usr/src/backend/cmd/main.go:14 +0x114
+local
+jwt
+panic: open : no such file or directory
+
+goroutine 1 [running]:
+github.com/siyoga/jwt-auth-boilerplate/internal/app.NewApplication(...)
+	/usr/src/backend/internal/app/app.go:20
+main.main()
+	/usr/src/backend/cmd/main.go:14 +0x114
+local
+jwt
+panic: open : no such file or directory
+
+goroutine 1 [running]:
+github.com/siyoga/jwt-auth-boilerplate/internal/app.NewApplication(...)
+	/usr/src/backend/internal/app/app.go:20
+main.main()
+	/usr/src/backend/cmd/main.go:14 +0x114
+local
+jwt
+panic: open : no such file or directory
+
+goroutine 1 [running]:
+github.com/siyoga/jwt-auth-boilerplate/internal/app.NewApplication(...)
+	/usr/src/backend/internal/app/app.go:20
+main.main()
+	/usr/src/backend/cmd/main.go:14 +0x114
+local
+jwt
+panic: open : no such file or directory
+
+goroutine 1 [running]:
+github.com/siyoga/jwt-auth-boilerplate/internal/app.NewApplication(...)
+	/usr/src/backend/internal/app/app.go:20
+main.main()
+	/usr/src/backend/cmd/main.go:14 +0x114
+local
+jwt
+panic: open : no such file or directory
+
+goroutine 1 [running]:
+github.com/siyoga/jwt-auth-boilerplate/internal/app.NewApplication(...)
+	/usr/src/backend/internal/app/app.go:20
+main.main()
+	/usr/src/backend/cmd/main.go:14 +0x114
+local
+{"lvl":"info","t":"2024-12-02T23:59:49.975Z","logger":"app_server","caller":"server/http.go:38","msg":"Start app server","port":8001}
+{"lvl":"info","t":"2024-12-02T23:59:49.984Z","caller":"dependencies/dependencies.go:127","msg":"Wait for receive interrupt signal"}
+{"lvl":"error","t":"2024-12-03T00:12:05.200Z","caller":"log/service.go:72","msg":"ERROR: column \"id\" does not exist (SQLSTATE 42703) \n SELECT id, username, password, email, created_at FROM user WHERE email=$1 OR username=$2","mehtod":"CheckUserExist","reason":"postgresql get error","stacktrace":4695051,"custom_caller":{"Defined":true,"PC":4695051,"File":"/usr/src/backend/internal/repository/user/common.go","Line":19,"Function":"github.com/siyoga/jwt-auth-boilerplate/internal/repository/user.(*repository).getUserBy"},"full_stacktrace":[{"PC":4695051,"Func":{},"Function":"github.com/siyoga/jwt-auth-boilerplate/internal/repository/user.(*repository).getUserBy","File":"/usr/src/backend/internal/repository/user/common.go","Line":19,"Entry":4694656},{"PC":4696743,"Func":{},"Function":"github.com/siyoga/jwt-auth-boilerplate/internal/repository/user.(*repository).CheckUserExist","File":"/usr/src/backend/internal/repository/user/operations.go","Line":62,"Entry":4696464},{"PC":4725259,"Func":{},"Function":"github.com/siyoga/jwt-auth-boilerplate/internal/service/auth.(*service).Create","File":"/usr/src/backend/internal/service/auth/create.go","Line":21,"Entry":4725040},{"PC":4675491,"Func":{},"Function":"github.com/siyoga/jwt-auth-boilerplate/internal/handler.(*authHandler).create","File":"/usr/src/backend/internal/handler/auth.go","Line":97,"Entry":4674864},{"PC":4679779,"Func":{},"Function":"github.com/siyoga/jwt-auth-boilerplate/internal/handler.(*requestHandler).requestWithJsonResult","File":"/usr/src/backend/internal/handler/handler.go","Line":87,"Entry":4679488},{"PC":4679435,"Func":{},"Function":"github.com/siyoga/jwt-auth-boilerplate/internal/handler.(*requestHandler).HandleJsonRequest.func1","File":"/usr/src/backend/internal/handler/handler.go","Line":66,"Entry":4679344}]}
+{"lvl":"warn","t":"2024-12-03T00:12:05.202Z","caller":"handler/handler.go:123","msg":"request","method":"POST","path":"/auth/create","ip":"","error":"details=ERROR: column \"id\" does not exist (SQLSTATE 42703), reason=database failed, status=500"}
+{"lvl":"info","t":"2024-12-03T00:16:44.535Z","caller":"dependencies/dependencies.go:129","msg":"Receive interrupt signal"}
+{"lvl":"info","t":"2024-12-03T00:16:44.536Z","logger":"app_server","caller":"server/http.go:51","msg":"Stop app server"}
+{"lvl":"info","t":"2024-12-03T00:16:44.537Z","caller":"dependencies/dependencies.go:118","msg":"shutting down app server"}
+local
+{"lvl":"info","t":"2024-12-03T00:22:24.072Z","logger":"app_server","caller":"server/http.go:38","msg":"Start app server","port":8001}
+{"lvl":"info","t":"2024-12-03T00:22:24.085Z","caller":"dependencies/dependencies.go:127","msg":"Wait for receive interrupt signal"}
+{"lvl":"info","t":"2024-12-03T00:22:32.670Z","caller":"dependencies/dependencies.go:129","msg":"Receive interrupt signal"}
+{"lvl":"info","t":"2024-12-03T00:22:32.670Z","logger":"app_server","caller":"server/http.go:51","msg":"Stop app server"}
+{"lvl":"info","t":"2024-12-03T00:22:32.671Z","caller":"dependencies/dependencies.go:118","msg":"shutting down app server"}
+local
+{"lvl":"info","t":"2024-12-03T00:26:44.263Z","logger":"app_server","caller":"server/http.go:38","msg":"Start app server","port":8001}
+{"lvl":"info","t":"2024-12-03T00:26:44.263Z","caller":"dependencies/dependencies.go:127","msg":"Wait for receive interrupt signal"}
+{"lvl":"info","t":"2024-12-03T00:27:28.076Z","caller":"dependencies/dependencies.go:129","msg":"Receive interrupt signal"}
+{"lvl":"info","t":"2024-12-03T00:27:28.082Z","logger":"app_server","caller":"server/http.go:51","msg":"Stop app server"}
+{"lvl":"info","t":"2024-12-03T00:27:28.086Z","caller":"dependencies/dependencies.go:118","msg":"shutting down app server"}
+local
+{"lvl":"info","t":"2024-12-03T00:27:38.609Z","logger":"app_server","caller":"server/http.go:38","msg":"Start app server","port":8001}
+{"lvl":"info","t":"2024-12-03T00:27:38.613Z","caller":"dependencies/dependencies.go:127","msg":"Wait for receive interrupt signal"}
+{"lvl":"info","t":"2024-12-03T00:36:01.123Z","caller":"dependencies/dependencies.go:129","msg":"Receive interrupt signal"}
+{"lvl":"info","t":"2024-12-03T00:36:01.126Z","logger":"app_server","caller":"server/http.go:51","msg":"Stop app server"}
+{"lvl":"info","t":"2024-12-03T00:36:01.129Z","caller":"dependencies/dependencies.go:118","msg":"shutting down app server"}
+local
+{"lvl":"info","t":"2024-12-03T00:36:17.162Z","logger":"app_server","caller":"server/http.go:38","msg":"Start app server","port":8001}
+{"lvl":"info","t":"2024-12-03T00:36:17.163Z","caller":"dependencies/dependencies.go:127","msg":"Wait for receive interrupt signal"}
+{"lvl":"info","t":"2024-12-03T00:36:41.708Z","caller":"dependencies/dependencies.go:129","msg":"Receive interrupt signal"}
+{"lvl":"info","t":"2024-12-03T00:36:41.710Z","logger":"app_server","caller":"server/http.go:51","msg":"Stop app server"}
+{"lvl":"info","t":"2024-12-03T00:36:41.712Z","caller":"dependencies/dependencies.go:118","msg":"shutting down app server"}
+local
+{"lvl":"info","t":"2024-12-03T00:36:54.641Z","logger":"app_server","caller":"server/http.go:38","msg":"Start app server","port":8001}
+{"lvl":"info","t":"2024-12-03T00:36:54.642Z","caller":"dependencies/dependencies.go:127","msg":"Wait for receive interrupt signal"}
+{"lvl":"info","t":"2024-12-03T00:37:03.324Z","caller":"dependencies/dependencies.go:129","msg":"Receive interrupt signal"}
+{"lvl":"info","t":"2024-12-03T00:37:03.324Z","logger":"app_server","caller":"server/http.go:51","msg":"Stop app server"}
+{"lvl":"info","t":"2024-12-03T00:37:03.324Z","caller":"dependencies/dependencies.go:118","msg":"shutting down app server"}
+local
+{"lvl":"info","t":"2024-12-03T00:38:13.665Z","logger":"app_server","caller":"server/http.go:38","msg":"Start app server","port":8001}
+{"lvl":"info","t":"2024-12-03T00:38:13.670Z","caller":"dependencies/dependencies.go:127","msg":"Wait for receive interrupt signal"}
+{"lvl":"info","t":"2024-12-03T00:39:42.341Z","caller":"dependencies/dependencies.go:129","msg":"Receive interrupt signal"}
+{"lvl":"info","t":"2024-12-03T00:39:42.343Z","logger":"app_server","caller":"server/http.go:51","msg":"Stop app server"}
+{"lvl":"info","t":"2024-12-03T00:39:42.345Z","caller":"dependencies/dependencies.go:118","msg":"shutting down app server"}
+local
+{"lvl":"info","t":"2024-12-03T00:39:57.033Z","logger":"app_server","caller":"server/http.go:38","msg":"Start app server","port":8001}
+{"lvl":"info","t":"2024-12-03T00:39:57.035Z","caller":"dependencies/dependencies.go:127","msg":"Wait for receive interrupt signal"}
+{"lvl":"info","t":"2024-12-03T00:40:15.412Z","caller":"dependencies/dependencies.go:129","msg":"Receive interrupt signal"}
+{"lvl":"info","t":"2024-12-03T00:40:15.415Z","logger":"app_server","caller":"server/http.go:51","msg":"Stop app server"}
+{"lvl":"info","t":"2024-12-03T00:40:15.416Z","caller":"dependencies/dependencies.go:118","msg":"shutting down app server"}
+local
+{"lvl":"info","t":"2024-12-03T00:40:27.572Z","logger":"app_server","caller":"server/http.go:38","msg":"Start app server","port":8001}
+{"lvl":"info","t":"2024-12-03T00:40:27.573Z","caller":"dependencies/dependencies.go:127","msg":"Wait for receive interrupt signal"}
+{"lvl":"error","t":"2024-12-03T00:40:40.185Z","caller":"log/service.go:72","msg":"expected 2 arguments, got 1 \n SELECT id, username, password, email, created_at FROM users WHERE email=$1 OR username=$2","mehtod":"CheckUserExist","reason":"postgresql get error","stacktrace":4695051,"custom_caller":{"Defined":true,"PC":4695051,"File":"/usr/src/backend/internal/repository/user/common.go","Line":19,"Function":"github.com/siyoga/jwt-auth-boilerplate/internal/repository/user.(*repository).getUserBy"},"full_stacktrace":[{"PC":4695051,"Func":{},"Function":"github.com/siyoga/jwt-auth-boilerplate/internal/repository/user.(*repository).getUserBy","File":"/usr/src/backend/internal/repository/user/common.go","Line":19,"Entry":4694656},{"PC":4696743,"Func":{},"Function":"github.com/siyoga/jwt-auth-boilerplate/internal/repository/user.(*repository).CheckUserExist","File":"/usr/src/backend/internal/repository/user/operations.go","Line":62,"Entry":4696464},{"PC":4725259,"Func":{},"Function":"github.com/siyoga/jwt-auth-boilerplate/internal/service/auth.(*service).Create","File":"/usr/src/backend/internal/service/auth/create.go","Line":21,"Entry":4725040},{"PC":4675491,"Func":{},"Function":"github.com/siyoga/jwt-auth-boilerplate/internal/handler.(*authHandler).create","File":"/usr/src/backend/internal/handler/auth.go","Line":97,"Entry":4674864},{"PC":4679779,"Func":{},"Function":"github.com/siyoga/jwt-auth-boilerplate/internal/handler.(*requestHandler).requestWithJsonResult","File":"/usr/src/backend/internal/handler/handler.go","Line":87,"Entry":4679488},{"PC":4679435,"Func":{},"Function":"github.com/siyoga/jwt-auth-boilerplate/internal/handler.(*requestHandler).HandleJsonRequest.func1","File":"/usr/src/backend/internal/handler/handler.go","Line":66,"Entry":4679344}]}
+{"lvl":"warn","t":"2024-12-03T00:40:40.186Z","caller":"handler/handler.go:123","msg":"request","method":"POST","path":"/auth/create","ip":"","error":"details=expected 2 arguments, got 1, reason=database failed, status=500"}
+{"lvl":"info","t":"2024-12-03T00:47:22.387Z","caller":"dependencies/dependencies.go:129","msg":"Receive interrupt signal"}
+{"lvl":"info","t":"2024-12-03T00:47:22.388Z","logger":"app_server","caller":"server/http.go:51","msg":"Stop app server"}
+{"lvl":"info","t":"2024-12-03T00:47:22.390Z","caller":"dependencies/dependencies.go:118","msg":"shutting down app server"}
+local
+{"lvl":"info","t":"2024-12-03T00:47:39.413Z","logger":"app_server","caller":"server/http.go:38","msg":"Start app server","port":8001}
+{"lvl":"info","t":"2024-12-03T00:47:39.414Z","caller":"dependencies/dependencies.go:127","msg":"Wait for receive interrupt signal"}
+{"lvl":"error","t":"2024-12-03T00:48:26.246Z","caller":"log/service.go:72","msg":"expected 2 arguments, got 1 \n SELECT id, username, password, email, created_at FROM users WHERE email=$1 OR username=$2","mehtod":"CheckUserExist","reason":"postgresql get error","stacktrace":4695051,"custom_caller":{"Defined":true,"PC":4695051,"File":"/usr/src/backend/internal/repository/user/common.go","Line":19,"Function":"github.com/siyoga/jwt-auth-boilerplate/internal/repository/user.(*repository).getUserBy"},"full_stacktrace":[{"PC":4695051,"Func":{},"Function":"github.com/siyoga/jwt-auth-boilerplate/internal/repository/user.(*repository).getUserBy","File":"/usr/src/backend/internal/repository/user/common.go","Line":19,"Entry":4694656},{"PC":4697159,"Func":{},"Function":"github.com/siyoga/jwt-auth-boilerplate/internal/repository/user.(*repository).CheckUserExist","File":"/usr/src/backend/internal/repository/user/operations.go","Line":71,"Entry":4696880},{"PC":4725659,"Func":{},"Function":"github.com/siyoga/jwt-auth-boilerplate/internal/service/auth.(*service).Create","File":"/usr/src/backend/internal/service/auth/create.go","Line":21,"Entry":4725440},{"PC":4675491,"Func":{},"Function":"github.com/siyoga/jwt-auth-boilerplate/internal/handler.(*authHandler).create","File":"/usr/src/backend/internal/handler/auth.go","Line":97,"Entry":4674864},{"PC":4679779,"Func":{},"Function":"github.com/siyoga/jwt-auth-boilerplate/internal/handler.(*requestHandler).requestWithJsonResult","File":"/usr/src/backend/internal/handler/handler.go","Line":87,"Entry":4679488},{"PC":4679435,"Func":{},"Function":"github.com/siyoga/jwt-auth-boilerplate/internal/handler.(*requestHandler).HandleJsonRequest.func1","File":"/usr/src/backend/internal/handler/handler.go","Line":66,"Entry":4679344}]}
+{"lvl":"warn","t":"2024-12-03T00:48:26.247Z","caller":"handler/handler.go:123","msg":"request","method":"POST","path":"/auth/create","ip":"","error":"details=expected 2 arguments, got 1, reason=database failed, status=500"}
+{"lvl":"info","t":"2024-12-03T00:50:20.660Z","caller":"dependencies/dependencies.go:129","msg":"Receive interrupt signal"}
+{"lvl":"info","t":"2024-12-03T00:50:20.661Z","logger":"app_server","caller":"server/http.go:51","msg":"Stop app server"}
+{"lvl":"info","t":"2024-12-03T00:50:20.661Z","caller":"dependencies/dependencies.go:118","msg":"shutting down app server"}
+local
+{"lvl":"info","t":"2024-12-03T00:50:32.454Z","logger":"app_server","caller":"server/http.go:38","msg":"Start app server","port":8001}
+{"lvl":"info","t":"2024-12-03T00:50:32.471Z","caller":"dependencies/dependencies.go:127","msg":"Wait for receive interrupt signal"}
+{00000000-0000-0000-0000-000000000000 some_username 12345 s.dyakov9@gmail.com 0001-01-01 00:00:00 +0000 UTC}
+{"lvl":"error","t":"2024-12-03T00:50:58.719Z","caller":"log/service.go:72","msg":"expected 2 arguments, got 1 \n SELECT id, username, password, email, created_at FROM users WHERE email=$1 OR username=$2","mehtod":"CheckUserExist","reason":"postgresql get error","stacktrace":4695051,"custom_caller":{"Defined":true,"PC":4695051,"File":"/usr/src/backend/internal/repository/user/common.go","Line":19,"Function":"github.com/siyoga/jwt-auth-boilerplate/internal/repository/user.(*repository).getUserBy"},"full_stacktrace":[{"PC":4695051,"Func":{},"Function":"github.com/siyoga/jwt-auth-boilerplate/internal/repository/user.(*repository).getUserBy","File":"/usr/src/backend/internal/repository/user/common.go","Line":19,"Entry":4694656},{"PC":4697159,"Func":{},"Function":"github.com/siyoga/jwt-auth-boilerplate/internal/repository/user.(*repository).CheckUserExist","File":"/usr/src/backend/internal/repository/user/operations.go","Line":71,"Entry":4696880},{"PC":4725731,"Func":{},"Function":"github.com/siyoga/jwt-auth-boilerplate/internal/service/auth.(*service).Create","File":"/usr/src/backend/internal/service/auth/create.go","Line":22,"Entry":4725440},{"PC":4675491,"Func":{},"Function":"github.com/siyoga/jwt-auth-boilerplate/internal/handler.(*authHandler).create","File":"/usr/src/backend/internal/handler/auth.go","Line":97,"Entry":4674864},{"PC":4679779,"Func":{},"Function":"github.com/siyoga/jwt-auth-boilerplate/internal/handler.(*requestHandler).requestWithJsonResult","File":"/usr/src/backend/internal/handler/handler.go","Line":87,"Entry":4679488},{"PC":4679435,"Func":{},"Function":"github.com/siyoga/jwt-auth-boilerplate/internal/handler.(*requestHandler).HandleJsonRequest.func1","File":"/usr/src/backend/internal/handler/handler.go","Line":66,"Entry":4679344}]}
+{"lvl":"warn","t":"2024-12-03T00:50:58.719Z","caller":"handler/handler.go:123","msg":"request","method":"POST","path":"/auth/create","ip":"","error":"details=expected 2 arguments, got 1, reason=database failed, status=500"}
+{"lvl":"info","t":"2024-12-03T00:54:03.489Z","caller":"dependencies/dependencies.go:129","msg":"Receive interrupt signal"}
+{"lvl":"info","t":"2024-12-03T00:54:03.494Z","logger":"app_server","caller":"server/http.go:51","msg":"Stop app server"}
+{"lvl":"info","t":"2024-12-03T00:54:03.498Z","caller":"dependencies/dependencies.go:118","msg":"shutting down app server"}
+local
+{"lvl":"panic","t":"2024-12-03T00:54:16.914Z","caller":"dependencies/client.go:13","msg":"initialize postgres client","error":"error while connecting to postgres failed to connect to `user=admin database=main`: 172.20.0.2:5432 (db): server error: FATAL: the database system is starting up (SQLSTATE 57P03)"}
+panic: initialize postgres client
+
+goroutine 1 [running]:
+go.uber.org/zap/zapcore.CheckWriteAction.OnWrite(0x0?, 0x1?, {0x0?, 0x0?, 0x0?})
+	/go/pkg/mod/go.uber.org/zap@v1.27.0/zapcore/entry.go:196 +0x78
+go.uber.org/zap/zapcore.(*CheckedEntry).Write(0x400011a1a0, {0x4000134000, 0x1, 0x1})
+	/go/pkg/mod/go.uber.org/zap@v1.27.0/zapcore/entry.go:262 +0x1c4
+go.uber.org/zap.(*Logger).Panic(0x40000ee100?, {0x5b80c9?, 0x0?}, {0x4000134000, 0x1, 0x1})
+	/go/pkg/mod/go.uber.org/zap@v1.27.0/logger.go:285 +0x54
+github.com/siyoga/jwt-auth-boilerplate/internal/dependencies.(*dependencies).PostgresClient(0x4000198000)
+	/usr/src/backend/internal/dependencies/client.go:13 +0x168
+github.com/siyoga/jwt-auth-boilerplate/internal/dependencies.(*dependencies).TransactionRepo(...)
+	/usr/src/backend/internal/dependencies/repository.go:12
+github.com/siyoga/jwt-auth-boilerplate/internal/dependencies.(*dependencies).AuthService(0x4000198000)
+	/usr/src/backend/internal/dependencies/service.go:13 +0x40
+github.com/siyoga/jwt-auth-boilerplate/internal/dependencies.(*dependencies).Middlewares(0x4000198000)
+	/usr/src/backend/internal/dependencies/handler.go:12 +0x28
+github.com/siyoga/jwt-auth-boilerplate/internal/dependencies.(*dependencies).HttpServer(0x4000198000)
+	/usr/src/backend/internal/dependencies/dependencies.go:106 +0x30
+github.com/siyoga/jwt-auth-boilerplate/internal/app.(*application).Run(0x4000041f20)
+	/usr/src/backend/internal/app/app.go:29 +0x30
+main.main()
+	/usr/src/backend/cmd/main.go:15 +0xf4
+local
+{"lvl":"info","t":"2024-12-03T00:54:17.294Z","logger":"app_server","caller":"server/http.go:38","msg":"Start app server","port":8001}
+{"lvl":"info","t":"2024-12-03T00:54:17.295Z","caller":"dependencies/dependencies.go:127","msg":"Wait for receive interrupt signal"}
+{00000000-0000-0000-0000-000000000000 some_username 12345 s.dyakov9@gmail.com 0001-01-01 00:00:00 +0000 UTC}
+{"lvl":"error","t":"2024-12-03T00:54:23.078Z","caller":"log/service.go:72","msg":"expected slice but got struct \n SELECT id, username, password, email, created_at FROM users WHERE email=$1 OR username=$2","mehtod":"CheckUserExist","reason":"postgresql get error","stacktrace":4694975,"custom_caller":{"Defined":true,"PC":4694975,"File":"/usr/src/backend/internal/repository/user/common.go","Line":19,"Function":"github.com/siyoga/jwt-auth-boilerplate/internal/repository/user.(*repository).getUserBy"},"full_stacktrace":[{"PC":4694975,"Func":{},"Function":"github.com/siyoga/jwt-auth-boilerplate/internal/repository/user.(*repository).getUserBy","File":"/usr/src/backend/internal/repository/user/common.go","Line":19,"Entry":4694656},{"PC":4697079,"Func":{},"Function":"github.com/siyoga/jwt-auth-boilerplate/internal/repository/user.(*repository).CheckUserExist","File":"/usr/src/backend/internal/repository/user/operations.go","Line":71,"Entry":4696800},{"PC":4725651,"Func":{},"Function":"github.com/siyoga/jwt-auth-boilerplate/internal/service/auth.(*service).Create","File":"/usr/src/backend/internal/service/auth/create.go","Line":22,"Entry":4725360},{"PC":4675491,"Func":{},"Function":"github.com/siyoga/jwt-auth-boilerplate/internal/handler.(*authHandler).create","File":"/usr/src/backend/internal/handler/auth.go","Line":97,"Entry":4674864},{"PC":4679779,"Func":{},"Function":"github.com/siyoga/jwt-auth-boilerplate/internal/handler.(*requestHandler).requestWithJsonResult","File":"/usr/src/backend/internal/handler/handler.go","Line":87,"Entry":4679488},{"PC":4679435,"Func":{},"Function":"github.com/siyoga/jwt-auth-boilerplate/internal/handler.(*requestHandler).HandleJsonRequest.func1","File":"/usr/src/backend/internal/handler/handler.go","Line":66,"Entry":4679344}]}
+{"lvl":"warn","t":"2024-12-03T00:54:23.079Z","caller":"handler/handler.go:123","msg":"request","method":"POST","path":"/auth/create","ip":"","error":"details=expected slice but got struct, reason=database failed, status=500"}
+{"lvl":"info","t":"2024-12-03T00:58:12.944Z","caller":"dependencies/dependencies.go:129","msg":"Receive interrupt signal"}
+{"lvl":"info","t":"2024-12-03T00:58:12.945Z","logger":"app_server","caller":"server/http.go:51","msg":"Stop app server"}
+{"lvl":"info","t":"2024-12-03T00:58:12.947Z","caller":"dependencies/dependencies.go:118","msg":"shutting down app server"}
+local
+{"lvl":"info","t":"2024-12-03T01:00:51.421Z","logger":"app_server","caller":"server/http.go:38","msg":"Start app server","port":8001}
+{"lvl":"info","t":"2024-12-03T01:00:51.422Z","caller":"dependencies/dependencies.go:127","msg":"Wait for receive interrupt signal"}
+{00000000-0000-0000-0000-000000000000 some_username 12345 s.dyakov9@gmail.com 0001-01-01 00:00:00 +0000 UTC}
+2024/12/03 01:01:07 http: panic serving 192.168.65.1:25544: runtime error: index out of range [0] with length 0
+goroutine 13 [running]:
+net/http.(*conn).serve.func1()
+	/usr/local/go/src/net/http/server.go:1898 +0xb0
+panic({0x574220?, 0x40000364b0?})
+	/usr/local/go/src/runtime/panic.go:770 +0x124
+github.com/siyoga/jwt-auth-boilerplate/internal/repository/user.(*repository).CheckUserExist(0x400000e570, {0x67ddc0, 0x4000220d90}, {0x67c5e0?, 0x40003020c0?}, {0x4000036438, 0x13}, {0x4000011c30, 0xd})
+	/usr/src/backend/internal/repository/user/operations.go:89 +0x1e4
+github.com/siyoga/jwt-auth-boilerplate/internal/service/auth.(*service).Create(0x40000c22c0, {0x67ddc0, 0x4000220d90}, {{0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, ...}, ...})
+	/usr/src/backend/internal/service/auth/create.go:22 +0x124
+github.com/siyoga/jwt-auth-boilerplate/internal/handler.(*authHandler).create(0x400009e7d0, {0x67dd18?, 0x40001fc9f0?}, 0x40000c2370?, 0x40001ad200)
+	/usr/src/backend/internal/handler/auth.go:97 +0x274
+github.com/siyoga/jwt-auth-boilerplate/internal/handler.(*requestHandler).requestWithJsonResult(0x400000e5a0, {0x5ae00b, 0x5}, {0x5aea7f, 0x7}, {0x5adcd1, 0x4}, {0x67c850, 0x400019c2a0}, 0x40001ad200, ...)
+	/usr/src/backend/internal/handler/handler.go:87 +0x124
+github.com/siyoga/jwt-auth-boilerplate/internal/handler.(*requestHandler).HandleJsonRequest.func1({0x67c850?, 0x400019c2a0?}, 0x1?)
+	/usr/src/backend/internal/handler/handler.go:66 +0x5c
+net/http.HandlerFunc.ServeHTTP(0x40001ad0e0?, {0x67c850?, 0x400019c2a0?}, 0x2?)
+	/usr/local/go/src/net/http/server.go:2166 +0x38
+github.com/gorilla/mux.(*Router).ServeHTTP(0x4000034b40, {0x67c850, 0x400019c2a0}, 0x40001acd80)
+	/go/pkg/mod/github.com/gorilla/mux@v1.8.1/mux.go:212 +0x194
+net/http.serverHandler.ServeHTTP({0x67a690?}, {0x67c850?, 0x400019c2a0?}, 0x6?)
+	/usr/local/go/src/net/http/server.go:3137 +0xbc
+net/http.(*conn).serve(0x40000d4480, {0x67dd18, 0x40002900f0})
+	/usr/local/go/src/net/http/server.go:2039 +0x508
+created by net/http.(*Server).Serve in goroutine 10
+	/usr/local/go/src/net/http/server.go:3285 +0x3f0
+{00000000-0000-0000-0000-000000000000 some_username 12345 s.dyakov9@gmail.com 0001-01-01 00:00:00 +0000 UTC}
+2024/12/03 01:01:30 http: panic serving 192.168.65.1:53744: runtime error: index out of range [0] with length 0
+goroutine 22 [running]:
+net/http.(*conn).serve.func1()
+	/usr/local/go/src/net/http/server.go:1898 +0xb0
+panic({0x574220?, 0x40000364c8?})
+	/usr/local/go/src/runtime/panic.go:770 +0x124
+github.com/siyoga/jwt-auth-boilerplate/internal/repository/user.(*repository).CheckUserExist(0x400000e570, {0x67ddc0, 0x400030c070}, {0x67c5e0?, 0x40002ae0f0?}, {0x400031c0d8, 0x13}, {0x40003182d0, 0xd})
+	/usr/src/backend/internal/repository/user/operations.go:89 +0x1e4
+github.com/siyoga/jwt-auth-boilerplate/internal/service/auth.(*service).Create(0x40000c22c0, {0x67ddc0, 0x400030c070}, {{0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, ...}, ...})
+	/usr/src/backend/internal/service/auth/create.go:22 +0x124
+github.com/siyoga/jwt-auth-boilerplate/internal/handler.(*authHandler).create(0x400009e7d0, {0x67dd18?, 0x4000322450?}, 0x4000350000?, 0x40003305a0)
+	/usr/src/backend/internal/handler/auth.go:97 +0x274
+github.com/siyoga/jwt-auth-boilerplate/internal/handler.(*requestHandler).requestWithJsonResult(0x400000e5a0, {0x5ae00b, 0x5}, {0x5aea7f, 0x7}, {0x5adcd1, 0x4}, {0x67c850, 0x400031a0e0}, 0x40003305a0, ...)
+	/usr/src/backend/internal/handler/handler.go:87 +0x124
+github.com/siyoga/jwt-auth-boilerplate/internal/handler.(*requestHandler).HandleJsonRequest.func1({0x67c850?, 0x400031a0e0?}, 0x1?)
+	/usr/src/backend/internal/handler/handler.go:66 +0x5c
+net/http.HandlerFunc.ServeHTTP(0x4000330480?, {0x67c850?, 0x400031a0e0?}, 0x2?)
+	/usr/local/go/src/net/http/server.go:2166 +0x38
+github.com/gorilla/mux.(*Router).ServeHTTP(0x4000034b40, {0x67c850, 0x400031a0e0}, 0x4000330360)
+	/go/pkg/mod/github.com/gorilla/mux@v1.8.1/mux.go:212 +0x194
+net/http.serverHandler.ServeHTTP({0x67a690?}, {0x67c850?, 0x400031a0e0?}, 0x6?)
+	/usr/local/go/src/net/http/server.go:3137 +0xbc
+net/http.(*conn).serve(0x4000338090, {0x67dd18, 0x40002900f0})
+	/usr/local/go/src/net/http/server.go:2039 +0x508
+created by net/http.(*Server).Serve in goroutine 10
+	/usr/local/go/src/net/http/server.go:3285 +0x3f0
+{"lvl":"info","t":"2024-12-03T01:04:02.583Z","caller":"dependencies/dependencies.go:129","msg":"Receive interrupt signal"}
+{"lvl":"info","t":"2024-12-03T01:04:02.585Z","logger":"app_server","caller":"server/http.go:51","msg":"Stop app server"}
+{"lvl":"info","t":"2024-12-03T01:04:02.587Z","caller":"dependencies/dependencies.go:118","msg":"shutting down app server"}
+local
+{"lvl":"info","t":"2024-12-03T01:05:43.094Z","logger":"app_server","caller":"server/http.go:38","msg":"Start app server","port":8001}
+{"lvl":"info","t":"2024-12-03T01:05:43.095Z","caller":"dependencies/dependencies.go:127","msg":"Wait for receive interrupt signal"}
+{00000000-0000-0000-0000-000000000000 some_username 12345 s.dyakov9@gmail.com 0001-01-01 00:00:00 +0000 UTC}
+{"lvl":"warn","t":"2024-12-03T01:05:48.027Z","caller":"handler/handler.go:123","msg":"request","method":"POST","path":"/auth/create","ip":"","error":"details=user with this credentials already exists, reason=conflict, status=409"}
+{"lvl":"info","t":"2024-12-03T01:09:16.855Z","caller":"dependencies/dependencies.go:129","msg":"Receive interrupt signal"}
+{"lvl":"info","t":"2024-12-03T01:09:16.856Z","logger":"app_server","caller":"server/http.go:51","msg":"Stop app server"}
+{"lvl":"info","t":"2024-12-03T01:09:16.858Z","caller":"dependencies/dependencies.go:118","msg":"shutting down app server"}
+local
+{"lvl":"info","t":"2024-12-03T01:09:29.612Z","logger":"app_server","caller":"server/http.go:38","msg":"Start app server","port":8001}
+{"lvl":"info","t":"2024-12-03T01:09:29.623Z","caller":"dependencies/dependencies.go:127","msg":"Wait for receive interrupt signal"}
+{"lvl":"warn","t":"2024-12-03T01:09:50.665Z","caller":"handler/handler.go:123","msg":"request","method":"POST","path":"/auth/create","ip":"","error":"details=user with this credentials already exists, reason=conflict, status=409"}
+{"lvl":"info","t":"2024-12-03T01:13:52.707Z","caller":"dependencies/dependencies.go:129","msg":"Receive interrupt signal"}
+{"lvl":"info","t":"2024-12-03T01:13:52.709Z","logger":"app_server","caller":"server/http.go:51","msg":"Stop app server"}
+{"lvl":"info","t":"2024-12-03T01:13:52.711Z","caller":"dependencies/dependencies.go:118","msg":"shutting down app server"}
+local
+{"lvl":"info","t":"2024-12-03T01:14:16.476Z","logger":"app_server","caller":"server/http.go:38","msg":"Start app server","port":8001}
+{"lvl":"info","t":"2024-12-03T01:14:16.478Z","caller":"dependencies/dependencies.go:127","msg":"Wait for receive interrupt signal"}
+{"lvl":"warn","t":"2024-12-03T01:14:29.151Z","caller":"handler/handler.go:123","msg":"request","method":"POST","path":"/auth/create","ip":"","error":"details=user with this credentials already exists, reason=conflict, status=409"}
+{"lvl":"info","t":"2024-12-03T01:14:54.708Z","caller":"dependencies/dependencies.go:129","msg":"Receive interrupt signal"}
+{"lvl":"info","t":"2024-12-03T01:14:54.708Z","logger":"app_server","caller":"server/http.go:51","msg":"Stop app server"}
+{"lvl":"info","t":"2024-12-03T01:14:54.709Z","caller":"dependencies/dependencies.go:118","msg":"shutting down app server"}
+local
+{"lvl":"info","t":"2024-12-03T01:15:07.012Z","logger":"app_server","caller":"server/http.go:38","msg":"Start app server","port":8001}
+{"lvl":"info","t":"2024-12-03T01:15:07.015Z","caller":"dependencies/dependencies.go:127","msg":"Wait for receive interrupt signal"}
+{    0}
+{"lvl":"warn","t":"2024-12-03T01:17:34.130Z","caller":"handler/handler.go:123","msg":"request","method":"POST","path":"/auth/create","ip":"","error":"details=user with this credentials already exists, reason=conflict, status=409"}
+{"lvl":"info","t":"2024-12-03T01:18:12.853Z","caller":"dependencies/dependencies.go:129","msg":"Receive interrupt signal"}
+{"lvl":"info","t":"2024-12-03T01:18:12.854Z","logger":"app_server","caller":"server/http.go:51","msg":"Stop app server"}
+{"lvl":"info","t":"2024-12-03T01:18:12.854Z","caller":"dependencies/dependencies.go:118","msg":"shutting down app server"}
+local
+{"lvl":"info","t":"2024-12-03T01:18:27.222Z","logger":"app_server","caller":"server/http.go:38","msg":"Start app server","port":8001}
+{"lvl":"info","t":"2024-12-03T01:18:27.224Z","caller":"dependencies/dependencies.go:127","msg":"Wait for receive interrupt signal"}
+{00000000-0000-0000-0000-000000000000    1970-01-01 00:00:00 +0000 UTC}
+{"lvl":"warn","t":"2024-12-03T01:18:44.093Z","caller":"handler/handler.go:123","msg":"request","method":"POST","path":"/auth/create","ip":"","error":"details=user with this credentials already exists, reason=conflict, status=409"}
+{"lvl":"info","t":"2024-12-03T01:20:16.657Z","caller":"dependencies/dependencies.go:129","msg":"Receive interrupt signal"}
+{"lvl":"info","t":"2024-12-03T01:20:16.659Z","logger":"app_server","caller":"server/http.go:51","msg":"Stop app server"}
+{"lvl":"info","t":"2024-12-03T01:20:16.663Z","caller":"dependencies/dependencies.go:118","msg":"shutting down app server"}
+local
+{"lvl":"info","t":"2024-12-03T01:20:30.448Z","logger":"app_server","caller":"server/http.go:38","msg":"Start app server","port":8001}
+{"lvl":"info","t":"2024-12-03T01:20:30.449Z","caller":"dependencies/dependencies.go:127","msg":"Wait for receive interrupt signal"}
+{"lvl":"error","t":"2024-12-03T01:20:55.164Z","caller":"log/service.go:86","msg":"error occured while hashing pass","mehtod":"Create","reason":"internal error","stacktrace":4726607,"custom_caller":{"Defined":true,"PC":4726607,"File":"/usr/src/backend/internal/service/auth/create.go","Line":32,"Function":"github.com/siyoga/jwt-auth-boilerplate/internal/service/auth.(*service).Create"},"full_stacktrace":[{"PC":4726607,"Func":{},"Function":"github.com/siyoga/jwt-auth-boilerplate/internal/service/auth.(*service).Create","File":"/usr/src/backend/internal/service/auth/create.go","Line":32,"Entry":4725664},{"PC":4675491,"Func":{},"Function":"github.com/siyoga/jwt-auth-boilerplate/internal/handler.(*authHandler).create","File":"/usr/src/backend/internal/handler/auth.go","Line":97,"Entry":4674864},{"PC":4679779,"Func":{},"Function":"github.com/siyoga/jwt-auth-boilerplate/internal/handler.(*requestHandler).requestWithJsonResult","File":"/usr/src/backend/internal/handler/handler.go","Line":87,"Entry":4679488},{"PC":4679435,"Func":{},"Function":"github.com/siyoga/jwt-auth-boilerplate/internal/handler.(*requestHandler).HandleJsonRequest.func1","File":"/usr/src/backend/internal/handler/handler.go","Line":66,"Entry":4679344}]}
+{"lvl":"warn","t":"2024-12-03T01:20:55.165Z","caller":"handler/handler.go:123","msg":"request","method":"POST","path":"/auth/create","ip":"","error":"details=error occured while hashing pass, reason=internal error, status=500"}
+{"lvl":"info","t":"2024-12-03T01:22:41.955Z","caller":"dependencies/dependencies.go:129","msg":"Receive interrupt signal"}
+{"lvl":"info","t":"2024-12-03T01:22:41.957Z","logger":"app_server","caller":"server/http.go:51","msg":"Stop app server"}
+{"lvl":"info","t":"2024-12-03T01:22:41.963Z","caller":"dependencies/dependencies.go:118","msg":"shutting down app server"}
+local
+{"lvl":"info","t":"2024-12-03T01:22:55.317Z","logger":"app_server","caller":"server/http.go:38","msg":"Start app server","port":8001}
+{"lvl":"info","t":"2024-12-03T01:22:55.317Z","caller":"dependencies/dependencies.go:127","msg":"Wait for receive interrupt signal"}
+{"lvl":"error","t":"2024-12-03T01:23:11.481Z","caller":"log/service.go:86","msg":"encoding/hex: odd length hex string","mehtod":"Create","reason":"internal error","stacktrace":4726571,"custom_caller":{"Defined":true,"PC":4726571,"File":"/usr/src/backend/internal/service/auth/create.go","Line":32,"Function":"github.com/siyoga/jwt-auth-boilerplate/internal/service/auth.(*service).Create"},"full_stacktrace":[{"PC":4726571,"Func":{},"Function":"github.com/siyoga/jwt-auth-boilerplate/internal/service/auth.(*service).Create","File":"/usr/src/backend/internal/service/auth/create.go","Line":32,"Entry":4725664},{"PC":4675491,"Func":{},"Function":"github.com/siyoga/jwt-auth-boilerplate/internal/handler.(*authHandler).create","File":"/usr/src/backend/internal/handler/auth.go","Line":97,"Entry":4674864},{"PC":4679779,"Func":{},"Function":"github.com/siyoga/jwt-auth-boilerplate/internal/handler.(*requestHandler).requestWithJsonResult","File":"/usr/src/backend/internal/handler/handler.go","Line":87,"Entry":4679488},{"PC":4679435,"Func":{},"Function":"github.com/siyoga/jwt-auth-boilerplate/internal/handler.(*requestHandler).HandleJsonRequest.func1","File":"/usr/src/backend/internal/handler/handler.go","Line":66,"Entry":4679344}]}
+{"lvl":"warn","t":"2024-12-03T01:23:11.483Z","caller":"handler/handler.go:123","msg":"request","method":"POST","path":"/auth/create","ip":"","error":"details=encoding/hex: odd length hex string, reason=internal error, status=500"}
+{"lvl":"info","t":"2024-12-03T01:30:43.464Z","caller":"dependencies/dependencies.go:129","msg":"Receive interrupt signal"}
+{"lvl":"info","t":"2024-12-03T01:30:43.467Z","logger":"app_server","caller":"server/http.go:51","msg":"Stop app server"}
+{"lvl":"info","t":"2024-12-03T01:30:43.469Z","caller":"dependencies/dependencies.go:118","msg":"shutting down app server"}
+local
+{"lvl":"info","t":"2024-12-03T01:31:00.139Z","logger":"app_server","caller":"server/http.go:38","msg":"Start app server","port":8001}
+{"lvl":"info","t":"2024-12-03T01:31:00.140Z","caller":"dependencies/dependencies.go:127","msg":"Wait for receive interrupt signal"}
+{"lvl":"info","t":"2024-12-03T01:31:49.411Z","caller":"log/service.go:54","msg":"request","method":"POST","path":"/auth/create","ip":""}
+{"lvl":"info","t":"2024-12-03T01:33:14.476Z","caller":"dependencies/dependencies.go:129","msg":"Receive interrupt signal"}
+{"lvl":"info","t":"2024-12-03T01:33:14.478Z","logger":"app_server","caller":"server/http.go:51","msg":"Stop app server"}
+{"lvl":"info","t":"2024-12-03T01:33:14.479Z","caller":"dependencies/dependencies.go:118","msg":"shutting down app server"}
+local
+{"lvl":"info","t":"2024-12-03T01:33:28.529Z","logger":"app_server","caller":"server/http.go:38","msg":"Start app server","port":8001}
+{"lvl":"info","t":"2024-12-03T01:33:28.530Z","caller":"dependencies/dependencies.go:127","msg":"Wait for receive interrupt signal"}
+{"lvl":"info","t":"2024-12-03T01:33:58.422Z","caller":"dependencies/dependencies.go:129","msg":"Receive interrupt signal"}
+{"lvl":"info","t":"2024-12-03T01:33:58.423Z","logger":"app_server","caller":"server/http.go:51","msg":"Stop app server"}
+{"lvl":"info","t":"2024-12-03T01:33:58.424Z","caller":"dependencies/dependencies.go:118","msg":"shutting down app server"}
+local
+{"lvl":"info","t":"2024-12-03T01:34:11.786Z","logger":"app_server","caller":"server/http.go:38","msg":"Start app server","port":8001}
+{"lvl":"info","t":"2024-12-03T01:34:11.790Z","caller":"dependencies/dependencies.go:127","msg":"Wait for receive interrupt signal"}
+{"lvl":"info","t":"2024-12-03T01:35:20.863Z","caller":"dependencies/dependencies.go:129","msg":"Receive interrupt signal"}
+{"lvl":"info","t":"2024-12-03T01:35:20.865Z","logger":"app_server","caller":"server/http.go:51","msg":"Stop app server"}
+{"lvl":"info","t":"2024-12-03T01:35:20.866Z","caller":"dependencies/dependencies.go:118","msg":"shutting down app server"}
+local
+{"lvl":"info","t":"2024-12-03T01:35:34.519Z","logger":"app_server","caller":"server/http.go:38","msg":"Start app server","port":8001}
+{"lvl":"info","t":"2024-12-03T01:35:34.522Z","caller":"dependencies/dependencies.go:127","msg":"Wait for receive interrupt signal"}
+{"lvl":"error","t":"2024-12-03T01:36:23.423Z","caller":"log/service.go:86","msg":"bcrypt: password length exceeds 72 bytes","mehtod":"Auth","reason":"hashing token error","stacktrace":4732691,"custom_caller":{"Defined":true,"PC":4732691,"File":"/usr/src/backend/internal/service/auth/internals.go","Line":86,"Function":"github.com/siyoga/jwt-auth-boilerplate/internal/service/auth.(*service).generateToken"},"full_stacktrace":[{"PC":4732691,"Func":{},"Function":"github.com/siyoga/jwt-auth-boilerplate/internal/service/auth.(*service).generateToken","File":"/usr/src/backend/internal/service/auth/internals.go","Line":86,"Entry":4730848},{"PC":4730275,"Func":{},"Function":"github.com/siyoga/jwt-auth-boilerplate/internal/service/auth.(*service).createTokensTx","File":"/usr/src/backend/internal/service/auth/internals.go","Line":40,"Entry":4729872},{"PC":4724831,"Func":{},"Function":"github.com/siyoga/jwt-auth-boilerplate/internal/service/auth.service.Auth","File":"/usr/src/backend/internal/service/auth/auth.go","Line":31,"Entry":4724048},{"PC":4674439,"Func":{},"Function":"github.com/siyoga/jwt-auth-boilerplate/internal/handler.(*authHandler).auth","File":"/usr/src/backend/internal/handler/auth.go","Line":75,"Entry":4673840},{"PC":4679795,"Func":{},"Function":"github.com/siyoga/jwt-auth-boilerplate/internal/handler.(*requestHandler).requestWithJsonResult","File":"/usr/src/backend/internal/handler/handler.go","Line":87,"Entry":4679504},{"PC":4678891,"Func":{},"Function":"github.com/siyoga/jwt-auth-boilerplate/internal/handler.(*requestHandler).HandleJsonRequestWithMiddleware.func1","File":"/usr/src/backend/internal/handler/handler.go","Line":60,"Entry":4678800},{"PC":4684823,"Func":{},"Function":"github.com/siyoga/jwt-auth-boilerplate/internal/handler.(*middleware).IpMiddleware.func1.1","File":"/usr/src/backend/internal/handler/middlewares.go","Line":77,"Entry":4684448}]}
+{"lvl":"warn","t":"2024-12-03T01:36:23.424Z","caller":"handler/handler.go:123","msg":"request","method":"POST","path":"/auth/","ip":"","error":"details=bcrypt: password length exceeds 72 bytes, reason=hashing token error, status=400"}
+{"lvl":"info","t":"2024-12-03T02:14:25.954Z","caller":"dependencies/dependencies.go:129","msg":"Receive interrupt signal"}
+{"lvl":"info","t":"2024-12-03T02:14:25.955Z","logger":"app_server","caller":"server/http.go:51","msg":"Stop app server"}
+{"lvl":"info","t":"2024-12-03T02:14:25.958Z","caller":"dependencies/dependencies.go:118","msg":"shutting down app server"}
+local
+{"lvl":"info","t":"2024-12-03T02:14:42.245Z","logger":"app_server","caller":"server/http.go:38","msg":"Start app server","port":8001}
+{"lvl":"info","t":"2024-12-03T02:14:42.249Z","caller":"dependencies/dependencies.go:127","msg":"Wait for receive interrupt signal"}
+{"lvl":"error","t":"2024-12-03T02:18:06.164Z","caller":"log/service.go:72","msg":"ERROR: value too long for type character(60) (SQLSTATE 22001) \n \n    INSERT INTO refresh_tokens (user_id, number, payload, expires_at)\n    VALUES(:user_id, :number, :payload, :expires_at)\n  ","mehtod":"AddToken","reason":"postgresql exec error","stacktrace":4692787,"custom_caller":{"Defined":true,"PC":4692787,"File":"/usr/src/backend/internal/repository/jwt/operations.go","Line":44,"Function":"github.com/siyoga/jwt-auth-boilerplate/internal/repository/jwt.(*repository).AddToken"},"full_stacktrace":[{"PC":4692787,"Func":{},"Function":"github.com/siyoga/jwt-auth-boilerplate/internal/repository/jwt.(*repository).AddToken","File":"/usr/src/backend/internal/repository/jwt/operations.go","Line":44,"Entry":4692448},{"PC":4732679,"Func":{},"Function":"github.com/siyoga/jwt-auth-boilerplate/internal/service/auth.(*service).generateToken","File":"/usr/src/backend/internal/service/auth/internals.go","Line":95,"Entry":4731136},{"PC":4730563,"Func":{},"Function":"github.com/siyoga/jwt-auth-boilerplate/internal/service/auth.(*service).createTokensTx","File":"/usr/src/backend/internal/service/auth/internals.go","Line":38,"Entry":4730160},{"PC":4725119,"Func":{},"Function":"github.com/siyoga/jwt-auth-boilerplate/internal/service/auth.service.Auth","File":"/usr/src/backend/internal/service/auth/auth.go","Line":31,"Entry":4724336},{"PC":4674663,"Func":{},"Function":"github.com/siyoga/jwt-auth-boilerplate/internal/handler.(*authHandler).auth","File":"/usr/src/backend/internal/handler/auth.go","Line":75,"Entry":4674064},{"PC":4680019,"Func":{},"Function":"github.com/siyoga/jwt-auth-boilerplate/internal/handler.(*requestHandler).requestWithJsonResult","File":"/usr/src/backend/internal/handler/handler.go","Line":87,"Entry":4679728},{"PC":4679115,"Func":{},"Function":"github.com/siyoga/jwt-auth-boilerplate/internal/handler.(*requestHandler).HandleJsonRequestWithMiddleware.func1","File":"/usr/src/backend/internal/handler/handler.go","Line":60,"Entry":4679024},{"PC":4685047,"Func":{},"Function":"github.com/siyoga/jwt-auth-boilerplate/internal/handler.(*middleware).IpMiddleware.func1.1","File":"/usr/src/backend/internal/handler/middlewares.go","Line":77,"Entry":4684672}]}
+{"lvl":"warn","t":"2024-12-03T02:18:06.166Z","caller":"handler/handler.go:123","msg":"request","method":"POST","path":"/auth/","ip":"","error":"details=ERROR: value too long for type character(60) (SQLSTATE 22001), reason=database failed, status=500"}
+{"lvl":"info","t":"2024-12-03T02:18:29.725Z","caller":"dependencies/dependencies.go:129","msg":"Receive interrupt signal"}
+{"lvl":"info","t":"2024-12-03T02:18:29.725Z","logger":"app_server","caller":"server/http.go:51","msg":"Stop app server"}
+{"lvl":"info","t":"2024-12-03T02:18:29.726Z","caller":"dependencies/dependencies.go:118","msg":"shutting down app server"}
+local
+{"lvl":"panic","t":"2024-12-03T02:19:08.317Z","caller":"dependencies/client.go:13","msg":"initialize postgres client","error":"error while connecting to postgres failed to connect to `user=admin database=main`: 172.20.0.2:5432 (db): dial error: dial tcp 172.20.0.2:5432: connect: connection refused"}
+panic: initialize postgres client
+
+goroutine 1 [running]:
+go.uber.org/zap/zapcore.CheckWriteAction.OnWrite(0x0?, 0x1?, {0x0?, 0x0?, 0x0?})
+	/go/pkg/mod/go.uber.org/zap@v1.27.0/zapcore/entry.go:196 +0x78
+go.uber.org/zap/zapcore.(*CheckedEntry).Write(0x40002421a0, {0x4000254000, 0x1, 0x1})
+	/go/pkg/mod/go.uber.org/zap@v1.27.0/zapcore/entry.go:262 +0x1c4
+go.uber.org/zap.(*Logger).Panic(0x40000ee0c0?, {0x5b8222?, 0x0?}, {0x4000254000, 0x1, 0x1})
+	/go/pkg/mod/go.uber.org/zap@v1.27.0/logger.go:285 +0x54
+github.com/siyoga/jwt-auth-boilerplate/internal/dependencies.(*dependencies).PostgresClient(0x4000118000)
+	/usr/src/backend/internal/dependencies/client.go:13 +0x168
+github.com/siyoga/jwt-auth-boilerplate/internal/dependencies.(*dependencies).TransactionRepo(...)
+	/usr/src/backend/internal/dependencies/repository.go:12
+github.com/siyoga/jwt-auth-boilerplate/internal/dependencies.(*dependencies).AuthService(0x4000118000)
+	/usr/src/backend/internal/dependencies/service.go:13 +0x40
+github.com/siyoga/jwt-auth-boilerplate/internal/dependencies.(*dependencies).Middlewares(0x4000118000)
+	/usr/src/backend/internal/dependencies/handler.go:12 +0x28
+github.com/siyoga/jwt-auth-boilerplate/internal/dependencies.(*dependencies).HttpServer(0x4000118000)
+	/usr/src/backend/internal/dependencies/dependencies.go:106 +0x30
+github.com/siyoga/jwt-auth-boilerplate/internal/app.(*application).Run(0x4000041f20)
+	/usr/src/backend/internal/app/app.go:29 +0x30
+main.main()
+	/usr/src/backend/cmd/main.go:15 +0xf4
+local
+{"lvl":"panic","t":"2024-12-03T02:19:08.680Z","caller":"dependencies/client.go:13","msg":"initialize postgres client","error":"error while connecting to postgres failed to connect to `user=admin database=main`: 172.20.0.2:5432 (db): dial error: dial tcp 172.20.0.2:5432: connect: connection refused"}
+panic: initialize postgres client
+
+goroutine 1 [running]:
+go.uber.org/zap/zapcore.CheckWriteAction.OnWrite(0x80?, 0x1?, {0x0?, 0x0?, 0x0?})
+	/go/pkg/mod/go.uber.org/zap@v1.27.0/zapcore/entry.go:196 +0x78
+go.uber.org/zap/zapcore.(*CheckedEntry).Write(0x40002281a0, {0x4000224080, 0x1, 0x1})
+	/go/pkg/mod/go.uber.org/zap@v1.27.0/zapcore/entry.go:262 +0x1c4
+go.uber.org/zap.(*Logger).Panic(0x400016c0c0?, {0x5b8222?, 0x0?}, {0x4000224080, 0x1, 0x1})
+	/go/pkg/mod/go.uber.org/zap@v1.27.0/logger.go:285 +0x54
+github.com/siyoga/jwt-auth-boilerplate/internal/dependencies.(*dependencies).PostgresClient(0x4000198000)
+	/usr/src/backend/internal/dependencies/client.go:13 +0x168
+github.com/siyoga/jwt-auth-boilerplate/internal/dependencies.(*dependencies).TransactionRepo(...)
+	/usr/src/backend/internal/dependencies/repository.go:12
+github.com/siyoga/jwt-auth-boilerplate/internal/dependencies.(*dependencies).AuthService(0x4000198000)
+	/usr/src/backend/internal/dependencies/service.go:13 +0x40
+github.com/siyoga/jwt-auth-boilerplate/internal/dependencies.(*dependencies).Middlewares(0x4000198000)
+	/usr/src/backend/internal/dependencies/handler.go:12 +0x28
+github.com/siyoga/jwt-auth-boilerplate/internal/dependencies.(*dependencies).HttpServer(0x4000198000)
+	/usr/src/backend/internal/dependencies/dependencies.go:106 +0x30
+github.com/siyoga/jwt-auth-boilerplate/internal/app.(*application).Run(0x4000041f20)
+	/usr/src/backend/internal/app/app.go:29 +0x30
+main.main()
+	/usr/src/backend/cmd/main.go:15 +0xf4
+local
+{"lvl":"panic","t":"2024-12-03T02:19:09.048Z","caller":"dependencies/client.go:13","msg":"initialize postgres client","error":"error while connecting to postgres failed to connect to `user=admin database=main`: 172.20.0.2:5432 (db): dial error: dial tcp 172.20.0.2:5432: connect: connection refused"}
+panic: initialize postgres client
+
+goroutine 1 [running]:
+go.uber.org/zap/zapcore.CheckWriteAction.OnWrite(0xc0?, 0x1?, {0x0?, 0x0?, 0x0?})
+	/go/pkg/mod/go.uber.org/zap@v1.27.0/zapcore/entry.go:196 +0x78
+go.uber.org/zap/zapcore.(*CheckedEntry).Write(0x40000ae1a0, {0x40000460c0, 0x1, 0x1})
+	/go/pkg/mod/go.uber.org/zap@v1.27.0/zapcore/entry.go:262 +0x1c4
+go.uber.org/zap.(*Logger).Panic(0x4000174100?, {0x5b8222?, 0x0?}, {0x40000460c0, 0x1, 0x1})
+	/go/pkg/mod/go.uber.org/zap@v1.27.0/logger.go:285 +0x54
+github.com/siyoga/jwt-auth-boilerplate/internal/dependencies.(*dependencies).PostgresClient(0x40001a0000)
+	/usr/src/backend/internal/dependencies/client.go:13 +0x168
+github.com/siyoga/jwt-auth-boilerplate/internal/dependencies.(*dependencies).TransactionRepo(...)
+	/usr/src/backend/internal/dependencies/repository.go:12
+github.com/siyoga/jwt-auth-boilerplate/internal/dependencies.(*dependencies).AuthService(0x40001a0000)
+	/usr/src/backend/internal/dependencies/service.go:13 +0x40
+github.com/siyoga/jwt-auth-boilerplate/internal/dependencies.(*dependencies).Middlewares(0x40001a0000)
+	/usr/src/backend/internal/dependencies/handler.go:12 +0x28
+github.com/siyoga/jwt-auth-boilerplate/internal/dependencies.(*dependencies).HttpServer(0x40001a0000)
+	/usr/src/backend/internal/dependencies/dependencies.go:106 +0x30
+github.com/siyoga/jwt-auth-boilerplate/internal/app.(*application).Run(0x4000041f20)
+	/usr/src/backend/internal/app/app.go:29 +0x30
+main.main()
+	/usr/src/backend/cmd/main.go:15 +0xf4
+local
+{"lvl":"info","t":"2024-12-03T02:19:09.655Z","logger":"app_server","caller":"server/http.go:38","msg":"Start app server","port":8001}
+{"lvl":"info","t":"2024-12-03T02:19:09.656Z","caller":"dependencies/dependencies.go:127","msg":"Wait for receive interrupt signal"}
+{"lvl":"info","t":"2024-12-03T02:19:32.216Z","caller":"dependencies/dependencies.go:129","msg":"Receive interrupt signal"}
+{"lvl":"info","t":"2024-12-03T02:19:32.223Z","logger":"app_server","caller":"server/http.go:51","msg":"Stop app server"}
+{"lvl":"info","t":"2024-12-03T02:19:32.228Z","caller":"dependencies/dependencies.go:118","msg":"shutting down app server"}
+local
+{"lvl":"info","t":"2024-12-03T02:19:45.242Z","logger":"app_server","caller":"server/http.go:38","msg":"Start app server","port":8001}
+{"lvl":"info","t":"2024-12-03T02:19:45.244Z","caller":"dependencies/dependencies.go:127","msg":"Wait for receive interrupt signal"}
+{"lvl":"info","t":"2024-12-03T02:21:03.818Z","caller":"log/service.go:54","msg":"request","method":"POST","path":"/auth/create","ip":""}
+{"lvl":"info","t":"2024-12-03T02:21:07.958Z","caller":"log/service.go:54","msg":"request","method":"POST","path":"/auth/","ip":""}
+{"lvl":"info","t":"2024-12-03T03:55:50.591Z","caller":"dependencies/dependencies.go:129","msg":"Receive interrupt signal"}
+{"lvl":"info","t":"2024-12-03T03:55:50.595Z","logger":"app_server","caller":"server/http.go:51","msg":"Stop app server"}
+{"lvl":"info","t":"2024-12-03T03:55:50.597Z","caller":"dependencies/dependencies.go:118","msg":"shutting down app server"}
+local
+{"lvl":"info","t":"2024-12-03T03:57:30.783Z","logger":"app_server","caller":"server/http.go:38","msg":"Start app server","port":8001}
+{"lvl":"info","t":"2024-12-03T03:57:30.786Z","caller":"dependencies/dependencies.go:127","msg":"Wait for receive interrupt signal"}
+{"lvl":"warn","t":"2024-12-03T04:05:17.312Z","caller":"handler/handler.go:123","msg":"request","method":"POST","path":"/auth/create","ip":"","error":"details=user with this credentials already exists, reason=conflict, status=409"}
+{"lvl":"info","t":"2024-12-03T04:05:27.376Z","caller":"dependencies/dependencies.go:129","msg":"Receive interrupt signal"}
+{"lvl":"info","t":"2024-12-03T04:05:27.377Z","logger":"app_server","caller":"server/http.go:51","msg":"Stop app server"}
+{"lvl":"info","t":"2024-12-03T04:05:27.378Z","caller":"dependencies/dependencies.go:118","msg":"shutting down app server"}
+local
+{"lvl":"info","t":"2024-12-03T04:05:41.256Z","logger":"app_server","caller":"server/http.go:38","msg":"Start app server","port":8001}
+{"lvl":"info","t":"2024-12-03T04:05:41.256Z","caller":"dependencies/dependencies.go:127","msg":"Wait for receive interrupt signal"}
+{"lvl":"warn","t":"2024-12-03T04:06:40.267Z","caller":"handler/handler.go:123","msg":"request","method":"GET","path":"/auth/refresh","ip":"","error":"details=<nil>, reason=expired token, status=400"}
+{"lvl":"info","t":"2024-12-03T04:06:56.556Z","caller":"log/service.go:54","msg":"request","method":"POST","path":"/auth/","ip":""}
+{"lvl":"warn","t":"2024-12-03T04:07:10.854Z","caller":"handler/handler.go:123","msg":"request","method":"GET","path":"/auth/refresh","ip":"","error":"details=<nil>, reason=expired token, status=400"}
+{"lvl":"info","t":"2024-12-03T04:09:49.695Z","caller":"dependencies/dependencies.go:129","msg":"Receive interrupt signal"}
+{"lvl":"info","t":"2024-12-03T04:09:49.697Z","logger":"app_server","caller":"server/http.go:51","msg":"Stop app server"}
+{"lvl":"info","t":"2024-12-03T04:09:49.699Z","caller":"dependencies/dependencies.go:118","msg":"shutting down app server"}
+local
+{"lvl":"info","t":"2024-12-03T04:10:26.846Z","logger":"app_server","caller":"server/http.go:38","msg":"Start app server","port":8001}
+{"lvl":"info","t":"2024-12-03T04:10:26.847Z","caller":"dependencies/dependencies.go:127","msg":"Wait for receive interrupt signal"}
+{"lvl":"info","t":"2024-12-03T04:10:45.509Z","caller":"log/service.go:54","msg":"request","method":"POST","path":"/auth/","ip":""}
+{"lvl":"error","t":"2024-12-03T04:10:56.513Z","caller":"log/service.go:72","msg":"expected 3 arguments, got 2 \n \n\t\tSELECT user_id, number, expires_at\n\t\tFROM refresh_tokens\n\t\tWHERE payload=$1 AND number=$2 AND user_id=$3\n\t","mehtod":"CheckToken","reason":"postgresql get error","stacktrace":4693523,"custom_caller":{"Defined":true,"PC":4693523,"File":"/usr/src/backend/internal/repository/jwt/operations.go","Line":84,"Function":"github.com/siyoga/jwt-auth-boilerplate/internal/repository/jwt.(*repository).CheckToken"},"full_stacktrace":[{"PC":4693523,"Func":{},"Function":"github.com/siyoga/jwt-auth-boilerplate/internal/repository/jwt.(*repository).CheckToken","File":"/usr/src/backend/internal/repository/jwt/operations.go","Line":84,"Entry":4693056},{"PC":4734287,"Func":{},"Function":"github.com/siyoga/jwt-auth-boilerplate/internal/service/auth.(*service).checkToken","File":"/usr/src/backend/internal/service/auth/internals.go","Line":162,"Entry":4733776},{"PC":4735107,"Func":{},"Function":"github.com/siyoga/jwt-auth-boilerplate/internal/service/auth.service.Verify","File":"/usr/src/backend/internal/service/auth/verify.go","Line":22,"Entry":4734896},{"PC":4676255,"Func":{},"Function":"github.com/siyoga/jwt-auth-boilerplate/internal/handler.(*authHandler).refresh","File":"/usr/src/backend/internal/handler/auth.go","Line":126,"Entry":4675904},{"PC":4679859,"Func":{},"Function":"github.com/siyoga/jwt-auth-boilerplate/internal/handler.(*requestHandler).requestWithJsonResult","File":"/usr/src/backend/internal/handler/handler.go","Line":87,"Entry":4679568},{"PC":4678955,"Func":{},"Function":"github.com/siyoga/jwt-auth-boilerplate/internal/handler.(*requestHandler).HandleJsonRequestWithMiddleware.func1","File":"/usr/src/backend/internal/handler/handler.go","Line":60,"Entry":4678864},{"PC":4684887,"Func":{},"Function":"github.com/siyoga/jwt-auth-boilerplate/internal/handler.(*middleware).IpMiddleware.func1.1","File":"/usr/src/backend/internal/handler/middlewares.go","Line":77,"Entry":4684512}]}
+{"lvl":"warn","t":"2024-12-03T04:10:56.513Z","caller":"handler/handler.go:123","msg":"request","method":"GET","path":"/auth/refresh","ip":"","error":"details=expected 3 arguments, got 2, reason=database failed, status=500"}
+{"lvl":"info","t":"2024-12-03T04:11:39.653Z","caller":"dependencies/dependencies.go:129","msg":"Receive interrupt signal"}
+{"lvl":"info","t":"2024-12-03T04:11:39.654Z","logger":"app_server","caller":"server/http.go:51","msg":"Stop app server"}
+{"lvl":"info","t":"2024-12-03T04:11:39.655Z","caller":"dependencies/dependencies.go:118","msg":"shutting down app server"}
+local
+{"lvl":"info","t":"2024-12-03T04:11:53.478Z","logger":"app_server","caller":"server/http.go:38","msg":"Start app server","port":8001}
+{"lvl":"info","t":"2024-12-03T04:11:53.478Z","caller":"dependencies/dependencies.go:127","msg":"Wait for receive interrupt signal"}
+2024/12/03 04:12:28 http: panic serving 192.168.65.1:39221: runtime error: invalid memory address or nil pointer dereference
+goroutine 39 [running]:
+net/http.(*conn).serve.func1()
+	/usr/local/go/src/net/http/server.go:1898 +0xb0
+panic({0x4f9440?, 0xa08a90?})
+	/usr/local/go/src/runtime/panic.go:770 +0x124
+github.com/siyoga/jwt-auth-boilerplate/internal/handler.(*authHandler).refresh(0x40002380a0, {0x67dcf8?, 0x4000224db0?}, 0x0, 0x400023c7e0)
+	/usr/src/backend/internal/handler/auth.go:136 +0x1c0
+github.com/siyoga/jwt-auth-boilerplate/internal/handler.(*requestHandler).requestWithJsonResult(0x40002360a8, {0x5ae0ae, 0x5}, {0x5af2a3, 0x8}, {0x5adb1a, 0x3}, {0x67c830, 0x40002401c0}, 0x400023c7e0, ...)
+	/usr/src/backend/internal/handler/handler.go:87 +0x124
+github.com/siyoga/jwt-auth-boilerplate/internal/handler.(*requestHandler).HandleJsonRequestWithMiddleware.func1({0x67c830?, 0x40002401c0?}, 0x4000133948?)
+	/usr/src/backend/internal/handler/handler.go:60 +0x5c
+net/http.HandlerFunc.ServeHTTP(0x67dcf8?, {0x67c830?, 0x40002401c0?}, 0x6752d0?)
+	/usr/local/go/src/net/http/server.go:2166 +0x38
+github.com/siyoga/jwt-auth-boilerplate/internal/handler.(*middleware).IpMiddleware.func1.1({0x67c830, 0x40002401c0}, 0x400023c6c0)
+	/usr/src/backend/internal/handler/middlewares.go:77 +0x178
+net/http.HandlerFunc.ServeHTTP(0x400023c5a0?, {0x67c830?, 0x40002401c0?}, 0x1e8f8?)
+	/usr/local/go/src/net/http/server.go:2166 +0x38
+github.com/gorilla/mux.(*Router).ServeHTTP(0x4000270000, {0x67c830, 0x40002401c0}, 0x400023c240)
+	/go/pkg/mod/github.com/gorilla/mux@v1.8.1/mux.go:212 +0x194
+net/http.serverHandler.ServeHTTP({0x4000224bd0?}, {0x67c830?, 0x40002401c0?}, 0x6?)
+	/usr/local/go/src/net/http/server.go:3137 +0xbc
+net/http.(*conn).serve(0x4000252120, {0x67dcf8, 0x4000224ae0})
+	/usr/local/go/src/net/http/server.go:2039 +0x508
+created by net/http.(*Server).Serve in goroutine 35
+	/usr/local/go/src/net/http/server.go:3285 +0x3f0
+{"lvl":"info","t":"2024-12-03T04:13:51.474Z","caller":"dependencies/dependencies.go:129","msg":"Receive interrupt signal"}
+{"lvl":"info","t":"2024-12-03T04:13:51.475Z","logger":"app_server","caller":"server/http.go:51","msg":"Stop app server"}
+{"lvl":"info","t":"2024-12-03T04:13:51.476Z","caller":"dependencies/dependencies.go:118","msg":"shutting down app server"}
+local
+{"lvl":"info","t":"2024-12-03T04:14:06.194Z","logger":"app_server","caller":"server/http.go:38","msg":"Start app server","port":8001}
+{"lvl":"info","t":"2024-12-03T04:14:06.234Z","caller":"dependencies/dependencies.go:127","msg":"Wait for receive interrupt signal"}
+2
+2024/12/03 04:15:04 http: panic serving 192.168.65.1:49581: runtime error: invalid memory address or nil pointer dereference
+goroutine 21 [running]:
+net/http.(*conn).serve.func1()
+	/usr/local/go/src/net/http/server.go:1898 +0xb0
+panic({0x4f9440?, 0xa08a90?})
+	/usr/local/go/src/runtime/panic.go:770 +0x124
+github.com/siyoga/jwt-auth-boilerplate/internal/handler.(*authHandler).refresh(0x4000228050, {0x67dd18?, 0x40002328d0?}, 0x0, 0x40003865a0)
+	/usr/src/backend/internal/handler/auth.go:138 +0x1fc
+github.com/siyoga/jwt-auth-boilerplate/internal/handler.(*requestHandler).requestWithJsonResult(0x400022c0d8, {0x5ae0ae, 0x5}, {0x5af2a3, 0x8}, {0x5adb1a, 0x3}, {0x67c850, 0x40002241c0}, 0x40003865a0, ...)
+	/usr/src/backend/internal/handler/handler.go:87 +0x124
+github.com/siyoga/jwt-auth-boilerplate/internal/handler.(*requestHandler).HandleJsonRequestWithMiddleware.func1({0x67c850?, 0x40002241c0?}, 0x40000e1948?)
+	/usr/src/backend/internal/handler/handler.go:60 +0x5c
+net/http.HandlerFunc.ServeHTTP(0x67dd18?, {0x67c850?, 0x40002241c0?}, 0x6752f0?)
+	/usr/local/go/src/net/http/server.go:2166 +0x38
+github.com/siyoga/jwt-auth-boilerplate/internal/handler.(*middleware).IpMiddleware.func1.1({0x67c850, 0x40002241c0}, 0x4000386480)
+	/usr/src/backend/internal/handler/middlewares.go:77 +0x178
+net/http.HandlerFunc.ServeHTTP(0x4000386360?, {0x67c850?, 0x40002241c0?}, 0x1e8f8?)
+	/usr/local/go/src/net/http/server.go:2166 +0x38
+github.com/gorilla/mux.(*Router).ServeHTTP(0x400025c000, {0x67c850, 0x40002241c0}, 0x4000386000)
+	/go/pkg/mod/github.com/gorilla/mux@v1.8.1/mux.go:212 +0x194
+net/http.serverHandler.ServeHTTP({0x40002326f0?}, {0x67c850?, 0x40002241c0?}, 0x6?)
+	/usr/local/go/src/net/http/server.go:3137 +0xbc
+net/http.(*conn).serve(0x4000380000, {0x67dd18, 0x4000188300})
+	/usr/local/go/src/net/http/server.go:2039 +0x508
+created by net/http.(*Server).Serve in goroutine 9
+	/usr/local/go/src/net/http/server.go:3285 +0x3f0
+{"lvl":"info","t":"2024-12-03T04:23:06.992Z","caller":"dependencies/dependencies.go:129","msg":"Receive interrupt signal"}
+{"lvl":"info","t":"2024-12-03T04:23:06.993Z","logger":"app_server","caller":"server/http.go:51","msg":"Stop app server"}
+{"lvl":"info","t":"2024-12-03T04:23:06.996Z","caller":"dependencies/dependencies.go:118","msg":"shutting down app server"}
+local
+{"lvl":"info","t":"2024-12-03T04:23:26.895Z","logger":"app_server","caller":"server/http.go:38","msg":"Start app server","port":8001}
+{"lvl":"info","t":"2024-12-03T04:23:26.904Z","caller":"dependencies/dependencies.go:127","msg":"Wait for receive interrupt signal"}
+{"lvl":"warn","t":"2024-12-03T04:23:46.590Z","caller":"handler/handler.go:123","msg":"request","method":"GET","path":"/auth/refresh","ip":"","error":"details=<nil>, reason=expired token, status=400"}
+{"lvl":"info","t":"2024-12-03T04:23:51.966Z","caller":"log/service.go:54","msg":"request","method":"POST","path":"/auth/","ip":""}
+3
+192.168.65.1
+2024/12/03 04:24:06 http: panic serving 192.168.65.1:22337: runtime error: invalid memory address or nil pointer dereference
+goroutine 26 [running]:
+net/http.(*conn).serve.func1()
+	/usr/local/go/src/net/http/server.go:1898 +0xb0
+panic({0x4f9440?, 0xa08a90?})
+	/usr/local/go/src/runtime/panic.go:770 +0x124
+github.com/siyoga/jwt-auth-boilerplate/internal/handler.(*authHandler).refresh(0x40001807d0, {0x67dd58?, 0x400027f1d0?}, 0x0, 0x40002ea240)
+	/usr/src/backend/internal/handler/auth.go:139 +0x23c
+github.com/siyoga/jwt-auth-boilerplate/internal/handler.(*requestHandler).requestWithJsonResult(0x40001a0540, {0x5ae0ae, 0x5}, {0x5af2a3, 0x8}, {0x5adb1a, 0x3}, {0x67c890, 0x400021c460}, 0x40002ea240, ...)
+	/usr/src/backend/internal/handler/handler.go:87 +0x124
+github.com/siyoga/jwt-auth-boilerplate/internal/handler.(*requestHandler).HandleJsonRequestWithMiddleware.func1({0x67c890?, 0x400021c460?}, 0x40002e7948?)
+	/usr/src/backend/internal/handler/handler.go:60 +0x5c
+net/http.HandlerFunc.ServeHTTP(0x67dd58?, {0x67c890?, 0x400021c460?}, 0x675320?)
+	/usr/local/go/src/net/http/server.go:2166 +0x38
+github.com/siyoga/jwt-auth-boilerplate/internal/handler.(*middleware).IpMiddleware.func1.1({0x67c890, 0x400021c460}, 0x40002ea120)
+	/usr/src/backend/internal/handler/middlewares.go:77 +0x178
+net/http.HandlerFunc.ServeHTTP(0x40002ea000?, {0x67c890?, 0x400021c460?}, 0x1e8f8?)
+	/usr/local/go/src/net/http/server.go:2166 +0x38
+github.com/gorilla/mux.(*Router).ServeHTTP(0x40001a2a80, {0x67c890, 0x400021c460}, 0x400023be60)
+	/go/pkg/mod/github.com/gorilla/mux@v1.8.1/mux.go:212 +0x194
+net/http.serverHandler.ServeHTTP({0x400027e900?}, {0x67c890?, 0x400021c460?}, 0x6?)
+	/usr/local/go/src/net/http/server.go:3137 +0xbc
+net/http.(*conn).serve(0x40001d05a0, {0x67dd58, 0x4000032120})
+	/usr/local/go/src/net/http/server.go:2039 +0x508
+created by net/http.(*Server).Serve in goroutine 23
+	/usr/local/go/src/net/http/server.go:3285 +0x3f0
+3
+192.168.65.1
+2024/12/03 04:24:06 http: panic serving 192.168.65.1:33975: runtime error: invalid memory address or nil pointer dereference
+goroutine 15 [running]:
+net/http.(*conn).serve.func1()
+	/usr/local/go/src/net/http/server.go:1898 +0xb0
+panic({0x4f9440?, 0xa08a90?})
+	/usr/local/go/src/runtime/panic.go:770 +0x124
+github.com/siyoga/jwt-auth-boilerplate/internal/handler.(*authHandler).refresh(0x40001807d0, {0x67dd58?, 0x4000032c90?}, 0x0, 0x4000000900)
+	/usr/src/backend/internal/handler/auth.go:139 +0x23c
+github.com/siyoga/jwt-auth-boilerplate/internal/handler.(*requestHandler).requestWithJsonResult(0x40001a0540, {0x5ae0ae, 0x5}, {0x5af2a3, 0x8}, {0x5adb1a, 0x3}, {0x67c890, 0x40000b01c0}, 0x4000000900, ...)
+	/usr/src/backend/internal/handler/handler.go:87 +0x124
+github.com/siyoga/jwt-auth-boilerplate/internal/handler.(*requestHandler).HandleJsonRequestWithMiddleware.func1({0x67c890?, 0x40000b01c0?}, 0x400007e948?)
+	/usr/src/backend/internal/handler/handler.go:60 +0x5c
+net/http.HandlerFunc.ServeHTTP(0x67dd58?, {0x67c890?, 0x40000b01c0?}, 0x675320?)
+	/usr/local/go/src/net/http/server.go:2166 +0x38
+github.com/siyoga/jwt-auth-boilerplate/internal/handler.(*middleware).IpMiddleware.func1.1({0x67c890, 0x40000b01c0}, 0x40000007e0)
+	/usr/src/backend/internal/handler/middlewares.go:77 +0x178
+net/http.HandlerFunc.ServeHTTP(0x40000006c0?, {0x67c890?, 0x40000b01c0?}, 0x1e8f8?)
+	/usr/local/go/src/net/http/server.go:2166 +0x38
+github.com/gorilla/mux.(*Router).ServeHTTP(0x40001a2a80, {0x67c890, 0x40000b01c0}, 0x40000005a0)
+	/go/pkg/mod/github.com/gorilla/mux@v1.8.1/mux.go:212 +0x194
+net/http.serverHandler.ServeHTTP({0x4000032ae0?}, {0x67c890?, 0x40000b01c0?}, 0x6?)
+	/usr/local/go/src/net/http/server.go:3137 +0xbc
+net/http.(*conn).serve(0x40000cc2d0, {0x67dd58, 0x4000032120})
+	/usr/local/go/src/net/http/server.go:2039 +0x508
+created by net/http.(*Server).Serve in goroutine 23
+	/usr/local/go/src/net/http/server.go:3285 +0x3f0
+{"lvl":"info","t":"2024-12-03T04:29:14.792Z","caller":"dependencies/dependencies.go:129","msg":"Receive interrupt signal"}
+{"lvl":"info","t":"2024-12-03T04:29:14.794Z","logger":"app_server","caller":"server/http.go:51","msg":"Stop app server"}
+{"lvl":"info","t":"2024-12-03T04:29:14.797Z","caller":"dependencies/dependencies.go:118","msg":"shutting down app server"}
+local
+{"lvl":"info","t":"2024-12-03T04:29:32.009Z","logger":"app_server","caller":"server/http.go:38","msg":"Start app server","port":8001}
+{"lvl":"info","t":"2024-12-03T04:29:32.009Z","caller":"dependencies/dependencies.go:127","msg":"Wait for receive interrupt signal"}
+3
+192.168.65.1
+2024/12/03 04:29:38 http: panic serving 192.168.65.1:47660: runtime error: invalid memory address or nil pointer dereference
+goroutine 21 [running]:
+net/http.(*conn).serve.func1()
+	/usr/local/go/src/net/http/server.go:1898 +0xb0
+panic({0x4f9440?, 0xa08a90?})
+	/usr/local/go/src/runtime/panic.go:770 +0x124
+github.com/siyoga/jwt-auth-boilerplate/internal/handler.(*authHandler).refresh(0x4000126050, {0x67dd38?, 0x4000110ab0?}, 0x0, 0x400012a7e0)
+	/usr/src/backend/internal/handler/auth.go:139 +0x228
+github.com/siyoga/jwt-auth-boilerplate/internal/handler.(*requestHandler).requestWithJsonResult(0x40001240d8, {0x5ae0ae, 0x5}, {0x5af2a3, 0x8}, {0x5adb1a, 0x3}, {0x67c870, 0x40001620e0}, 0x400012a7e0, ...)
+	/usr/src/backend/internal/handler/handler.go:87 +0x124
+github.com/siyoga/jwt-auth-boilerplate/internal/handler.(*requestHandler).HandleJsonRequestWithMiddleware.func1({0x67c870?, 0x40001620e0?}, 0x40000e7948?)
+	/usr/src/backend/internal/handler/handler.go:60 +0x5c
+net/http.HandlerFunc.ServeHTTP(0x67dd38?, {0x67c870?, 0x40001620e0?}, 0x675300?)
+	/usr/local/go/src/net/http/server.go:2166 +0x38
+github.com/siyoga/jwt-auth-boilerplate/internal/handler.(*middleware).IpMiddleware.func1.1({0x67c870, 0x40001620e0}, 0x400012a6c0)
+	/usr/src/backend/internal/handler/middlewares.go:77 +0x178
+net/http.HandlerFunc.ServeHTTP(0x400012a5a0?, {0x67c870?, 0x40001620e0?}, 0x1e8f8?)
+	/usr/local/go/src/net/http/server.go:2166 +0x38
+github.com/gorilla/mux.(*Router).ServeHTTP(0x4000150000, {0x67c870, 0x40001620e0}, 0x400012a120)
+	/go/pkg/mod/github.com/gorilla/mux@v1.8.1/mux.go:212 +0x194
+net/http.serverHandler.ServeHTTP({0x40001108d0?}, {0x67c870?, 0x40001620e0?}, 0x6?)
+	/usr/local/go/src/net/http/server.go:3137 +0xbc
+net/http.(*conn).serve(0x4000166090, {0x67dd38, 0x40002820f0})
+	/usr/local/go/src/net/http/server.go:2039 +0x508
+created by net/http.(*Server).Serve in goroutine 19
+	/usr/local/go/src/net/http/server.go:3285 +0x3f0
+{"lvl":"info","t":"2024-12-03T04:30:53.991Z","caller":"dependencies/dependencies.go:129","msg":"Receive interrupt signal"}
+{"lvl":"info","t":"2024-12-03T04:30:53.992Z","logger":"app_server","caller":"server/http.go:51","msg":"Stop app server"}
+{"lvl":"info","t":"2024-12-03T04:30:53.994Z","caller":"dependencies/dependencies.go:118","msg":"shutting down app server"}
+local
+{"lvl":"info","t":"2024-12-03T04:31:07.789Z","logger":"app_server","caller":"server/http.go:38","msg":"Start app server","port":8001}
+{"lvl":"info","t":"2024-12-03T04:31:07.803Z","caller":"dependencies/dependencies.go:127","msg":"Wait for receive interrupt signal"}
+{"lvl":"info","t":"2024-12-03T04:31:11.677Z","caller":"log/service.go:54","msg":"request","method":"GET","path":"/auth/refresh","ip":""}
+{"lvl":"info","t":"2024-12-03T04:31:54.319Z","caller":"log/service.go:54","msg":"request","method":"GET","path":"/auth/refresh","ip":""}
+{"lvl":"error","t":"2024-12-03T04:33:26.535Z","caller":"handler/middlewares.go:62","msg":"auth_failed_log_jwt err=(reason=expired token, details=), token=eyJhbGciOiJIUzUxMiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE3MzMyMDAzNzQsImlwIjoiMTkyLjE2OC42NS4xIiwianRpIjoiNDM3Mzk4MzMtYWQwZC00ZDYyLThlN2ItNTZlZDZlY2YyMDcyIiwibnVtYmVyIjozLCJ1c2VyX2lkIjoiYjIzYjg4MjQtN2MxNi00MDYxLWJjMGQtNjhkYjJhYTljMWUwIn0.76bC_6W3TGlT0JXf-40QsSeoNucyXW7ltyRuPsBMYI0IKsnHkMByKxlexrlg1N0E1D7y5vnUJNKxmccs0sohOw"}
+{"lvl":"info","t":"2024-12-03T04:33:40.317Z","caller":"log/service.go:54","msg":"request","method":"GET","path":"/auth/refresh","ip":""}
+{"lvl":"info","t":"2024-12-03T04:33:48.599Z","caller":"log/service.go:54","msg":"request","method":"GET","path":"/auth/whoami","ip":"","acc":"&{UserId:b23b8824-7c16-4061-bc0d-68db2aa9c1e0 Ip:192.168.65.1}"}
+2024/12/03 04:33:48 net/http: invalid byte '"' in Cookie.Value; dropping invalid bytes
+{"lvl":"info","t":"2024-12-03T04:34:04.575Z","caller":"dependencies/dependencies.go:129","msg":"Receive interrupt signal"}
+{"lvl":"info","t":"2024-12-03T04:34:04.575Z","logger":"app_server","caller":"server/http.go:51","msg":"Stop app server"}
+{"lvl":"info","t":"2024-12-03T04:34:04.576Z","caller":"dependencies/dependencies.go:118","msg":"shutting down app server"}

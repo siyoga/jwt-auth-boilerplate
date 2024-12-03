@@ -1,0 +1,4 @@
+main
+/configs/*
+!/configs/local
+.env

@@ -1,0 +1,19 @@
+{
+  "mode": "local",
+  "psql": "postgresql://admin:1234@db:5432/main?sslmode=disable",
+  "jwt_key": "sign_key",
+  "server": {
+    "port": 8001,
+    "locale": 3
+  },
+  "auth": {
+    "at": 60,
+    "rt": 600,
+    "cookie": 604800,
+    "request": 60
+  },
+  "timeouts": {
+    "request": "10s",
+    "auth": "5s"
+  }
+}
