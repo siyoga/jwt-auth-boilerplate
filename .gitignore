@@ -2,3 +2,4 @@ main
 /configs/*
 !/configs/local
 .env
+/mocks/*

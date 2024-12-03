@@ -11,12 +11,6 @@ type (
 		*sqlx.Tx
 		ctx context.Context
 	}
-
-	Transaction interface {
-		Commit() error
-		Rollback()
-		Txm() *sqlx.Tx
-	}
 )
 
 func (t *Tx) Txm() *sqlx.Tx {

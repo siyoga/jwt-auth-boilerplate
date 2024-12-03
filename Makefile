@@ -13,3 +13,5 @@ docker.build:
 	docker build --no-cache -t test --build-arg MODE=local --build-arg MODULE=backend .
 build:
 	go build -race -v cmd/main.go
+generate:
+	go generate ./...

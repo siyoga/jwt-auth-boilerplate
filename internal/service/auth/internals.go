@@ -2,14 +2,17 @@ package auth
 
 import (
 	"context"
+	"crypto/sha256"
 	"encoding/base64"
+	"encoding/hex"
 	"fmt"
+	"strings"
 	"time"
 
 	"github.com/siyoga/jwt-auth-boilerplate/internal/converter"
 	"github.com/siyoga/jwt-auth-boilerplate/internal/domain"
 	"github.com/siyoga/jwt-auth-boilerplate/internal/errors"
-	"github.com/siyoga/jwt-auth-boilerplate/internal/repository/models"
+	"github.com/siyoga/jwt-auth-boilerplate/internal/repository"
 
 	"github.com/dgrijalva/jwt-go"
 	"github.com/gofrs/uuid"
@@ -18,7 +21,7 @@ import (
 // Регистрация
 
 func (s *service) createTokensTx(
-	ctx context.Context, tx models.Transaction, id uuid.UUID, ip string, number *int64,
+	ctx context.Context, tx repository.Transaction, id uuid.UUID, ip string, number *int64,
 ) (int64, domain.Token, domain.Token, *errors.Error) {
 	now := s.timeAdapter.Now()
 
@@ -54,20 +57,17 @@ func (s *service) createTokensTx(
 
 func (s *service) generateToken(
 	ctx context.Context,
-	tx models.Transaction,
+	tx repository.Transaction,
 	purpose domain.AuthPurpose,
 	number int64,
 	userId uuid.UUID,
 	ip string,
 	expire time.Time,
 ) (string, *errors.Error) {
-	jti, err := uuid.NewV4()
-	if err != nil {
-		return "", s.log.ServiceError(errors.WD(errors.ErrInternal, err))
-	}
+	secret := s.generateSecret(userId.String(), ip, number)
 
 	claims := jwt.MapClaims{
-		"jti":     jti.String(),
+		"secret":  secret,
 		"user_id": userId.String(),
 		"ip":      ip,
 		"exp":     expire.Unix(),
@@ -102,6 +102,19 @@ func (s *service) generateToken(
 	return res, nil
 }
 
+func (s *service) generateSecret(userId, ip string, number int64) string {
+	toHashElems := []string{
+		userId,
+		ip,
+		fmt.Sprintf("%d", number),
+		fmt.Sprintf("%d", s.timeAdapter.Now().UnixNano()),
+		s.randomAdapter.RandomString(20),
+	}
+	toHash := strings.Join(toHashElems, "_")
+	hash := sha256.Sum256([]byte(toHash))
+	return hex.EncodeToString(hash[:])
+}
+
 func (s *service) parseToken(
 	token string,
 	purpose domain.AuthPurpose,
@@ -131,7 +144,7 @@ func (s *service) parseToken(
 }
 
 func (s *service) checkToken(
-	ctx context.Context, tx models.Transaction, res *jwt.Token,
+	ctx context.Context, tx repository.Transaction, res *jwt.Token,
 ) (domain.Account, int64, *errors.Error) {
 	claims, ok := res.Claims.(jwt.MapClaims)
 	if !ok {

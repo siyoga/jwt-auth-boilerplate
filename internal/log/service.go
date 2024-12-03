@@ -30,9 +30,9 @@ type (
 	}
 )
 
-func NewLogger(l *zap.Logger, moduleName string) Logger {
+func NewLogger(l *zap.Logger) Logger {
 	return &logger{
-		moduleName: moduleName,
+		moduleName: "github.com/siyoga/jwt-auth-boilerplate",
 		log:        l,
 	}
 }

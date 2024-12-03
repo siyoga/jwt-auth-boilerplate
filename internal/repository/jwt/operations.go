@@ -31,7 +31,7 @@ func NewRepository(
 }
 
 func (r *repository) AddToken(
-	ctx context.Context, tx models.Transaction,
+	ctx context.Context, tx def.Transaction,
 	token models.Token,
 ) (models.Token, error) {
 	query := `
@@ -54,7 +54,7 @@ func (r *repository) AddToken(
 
 func (r *repository) DropToken(
 	ctx context.Context,
-	tx models.Transaction,
+	tx def.Transaction,
 	userId string,
 	number int64,
 ) error {
@@ -69,7 +69,7 @@ func (r *repository) DropToken(
 
 func (r *repository) CheckToken(
 	ctx context.Context,
-	tx models.Transaction,
+	tx def.Transaction,
 	number int64,
 	userId string,
 ) (models.Token, error) {
@@ -91,7 +91,7 @@ func (r *repository) CheckToken(
 	return tokens[0], nil
 }
 
-func (r *repository) FindNumber(ctx context.Context, tx models.Transaction, userId string) (int64, error) {
+func (r *repository) FindNumber(ctx context.Context, tx def.Transaction, userId string) (int64, error) {
 	var numbers []int64
 	query := `
     SELECT number

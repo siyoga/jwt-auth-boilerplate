@@ -84,7 +84,7 @@ func NewDependencies(cfgPath string) (Dependencies, error) {
 
 	return &dependencies{
 		cfg:        *cfg,
-		log:        log.NewLogger(z, "github.com/siyoga/jwt-auth-boilerplate"),
+		log:        log.NewLogger(z),
 		shutdownCh: make(chan os.Signal),
 	}, nil
 }

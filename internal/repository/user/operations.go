@@ -29,7 +29,7 @@ func NewRepository(
 	}
 }
 
-func (r *repository) Create(ctx context.Context, tx models.Transaction, user models.User) (models.User, error) {
+func (r *repository) Create(ctx context.Context, tx def.Transaction, user models.User) (models.User, error) {
 	query := `
 		INSERT INTO users (username, email, password)
 		VALUES(:username, :email, :password)
@@ -48,14 +48,14 @@ func (r *repository) Create(ctx context.Context, tx models.Transaction, user mod
 	return user, err
 }
 
-func (r *repository) GetById(ctx context.Context, tx models.Transaction, id string) (models.User, error) {
+func (r *repository) GetById(ctx context.Context, tx def.Transaction, id string) (models.User, error) {
 	params := `WHERE id=$1`
 	return r.getUserBy(ctx, tx.Txm(), params, id)
 }
 
 func (r *repository) GetByEmail(
 	ctx context.Context,
-	tx models.Transaction,
+	tx def.Transaction,
 	email string,
 ) (models.User, error) {
 	params := `WHERE email=$1`
@@ -64,7 +64,7 @@ func (r *repository) GetByEmail(
 
 func (r *repository) CheckUserExist(
 	ctx context.Context,
-	tx models.Transaction,
+	tx def.Transaction,
 	email, username string,
 ) (models.User, error) {
 	params := `WHERE email=$1 OR username=$2`
